@@ -1,0 +1,17 @@
+# Comment installer, initialisé et lancer le projet ? #
+
+# ********** NG SERVE **********
+
+Lancer le powershell en mode administrateur depuis le dossier racine du projet (C:\Users\NomUtilisateur\P6- Creation D'API\Web-Developer-P6). Une fois le powershell ouvert, taper : npm run start. Le projet doit être disponible a l'adresse suivante : http://localhost:4200/
+
+# ********** NODEMON SERVER **********
+
+Dans le dossier backend du projet (C:\Users\NomUtilisateur\P6- Creation D'API\Web-Developer-P6\backend), installer nodemon server en utilisant la ligne de commande suivante : npm install -g nodemon. Une fois nodemon installer, vous pouvez le lancer depuis le dossier backend avec la commande "nodemon server".
+
+# ********** FICHIER ENVIRONEMENT **********
+
+Pour des raison de sécurité, le projet utilise un fichier .env afin de ne pas divulguer de donnèes sensible. Voici la procédure afin de vous connecter a mongo Atlas :
+
+1: Rendez-vous dans le fichier app.js du projet.
+2: A la ligne 20 du fichier app.js, remplacer le "process.env.MONGODB" par votre lien de connexion a mongo Atlas.
+3: Relancer nodemon server. Si la connexion a réussis, un console.log "Connexion à MongoDB réussie" doit apparaitre.
